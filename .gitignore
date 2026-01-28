@@ -1,5 +1,7 @@
-audio/
-images/
-*.mp3
-*.mp4
-*.wav
+
+
+# Ignore everything
+*
+# Except images folder
+!images1/
+
