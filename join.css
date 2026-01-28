@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+body{
+    min-height: 100vh;
+       background: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url("images/audion.jpg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color:white;
+
+}
+.form-container{
+    width: 100%;
+    max-width: 520px;
+    background: rgba(0,0,0,0.85);
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.0.6);
+
+}
+
+.form .form-container h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 14px;
+    opacity:0.85;
+    margin-bottom: 25px;
+}
+label{
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+input,
+select{
+    width: 100%;
+    padding :12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border:none;
+    outline: none;
+    font-size: 14px;
+}
+input[type="file"]{
+    background: white;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.checkbox input{
+    width: auto;
+}
+button{
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff2a68, #ff6a00);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor:pointer;
+    transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+
+}
+@media(max-width:600px){
+    .form-container{
+        padding: 25px;
+
+    }
+    .form-container h1{
+        font-size: 26px;
+        
+    }
+}
